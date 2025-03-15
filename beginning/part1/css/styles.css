@@ -1,0 +1,60 @@
+body {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.item {
+    box-sizing: border-box;
+    border: 1px solid #333;
+    font-size: 2em;
+    text-align: center;
+    padding: 5px;
+}
+
+.i1 {background-color: #1f4cbb;}
+.i2 {background-color: #6a8ed9;}
+.i3 {background-color: #a2b9e8;}
+.i4 {background-color: #7a2b4e;}
+.i5 {background-color: #a13e70;}
+.i6 {background-color: #d1a4c1;}
+.i7 {background-color: #3e5b32;}
+.i8 {background-color: #7a9d58;}
+.i9 {background-color: #a7d18e;}
+.i10 {background-color: #6c5b7c;}
+.i11 {background-color: #c06c84}
+.i12 {background-color: #e274a6;}
+.i13 {background-color: #f8b595;}
+.i14 {background-color: #f9a216;}
+.i15 {background-color: #ff6f3c;}
+.i16 {background-color: #ff9a3c;}
+.i17 {background-color: #f5da10;}
+.i18 {background-color: #1c7069;}
+.i19 {background-color: #19c7b9;}
+.i20 {background-color: #05ebd7;}
+.i21 {background-color: #daf7a6;}
+.i22 {background-color: #923977;}
+.i23 {background-color: #ca2d69;}
+.i24 {background-color: #d10a42;}
+.i25 {background-color: #ff5733;}
+
+.g1 {
+   display: grid;
+   grid-template-columns: 50px 50px 50px;
+   grid-template-rows: 50px 50px;
+   gap: 10px;
+}
+
+.g2 {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 50px minmax(75px, 1fr) 50px minmax(75px, 1fr);
+    gap: 15px;
+}
+.g2 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.g3 {
+    height: 400px;
+}
