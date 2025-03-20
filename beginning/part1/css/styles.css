@@ -9,7 +9,7 @@ body {
     text-align: center;
     padding: 5px;
 }
-
+/* Box colors */
 .i1 {background-color: #1f4cbb;}
 .i2 {background-color: #6a8ed9;}
 .i3 {background-color: #a2b9e8;}
@@ -35,14 +35,14 @@ body {
 .i23 {background-color: #ca2d69;}
 .i24 {background-color: #d10a42;}
 .i25 {background-color: #ff5733;}
-
+/* Basic Grid Layout */
 .g1 {
    display: grid;
    grid-template-columns: 50px 50px 50px;
    grid-template-rows: 50px 50px;
    gap: 10px;
 }
-
+/* Variable Grid Layout w/ Numbers */
 .g2 {
     display: grid;
     grid-template-columns: repeat(4, 100px);
@@ -54,7 +54,37 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+/* Layout w/ Nested Grids */
 .g3 {
     height: 400px;
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: minmax(200px, 20%) 1fr;
+}
+/* Nested Grids Colors */
+header {
+    background-color: #178b9a;
+    grid-area: header;
+}
+.articles {
+    background-color: #89f9dc;
+    grid-area: articles;
+    height: 140px;
+}
+.featured {
+    background-color: #00b9b3;
+    grid-area: featured;
+    height: 140px;
+}
+aside {
+    background-color: #539a98;
+    grid-area: sidebar;
+}
+footer {
+    background-color: #446bb1;
+    grid-area: footer;
 }
