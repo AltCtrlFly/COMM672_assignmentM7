@@ -86,7 +86,7 @@ h2 {
     filter: drop-shadow(rgb(234, 233, 233) 1rem 1rem 10px);
 }
 .event-block2, .event-block3 {
-    display: grid;
+    /* display: grid; */
     max-width: 250px;
     height: 500px;
     text-align: center;
