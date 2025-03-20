@@ -8,9 +8,11 @@ body {
     margin: auto;
     padding: 10px;
 }
+/* links */
 a {
     color: #e6a563;
 }
+/* header */
 header {
     background-color: #efefef;
 }
@@ -20,9 +22,6 @@ header a {
 }
 header a:hover {
     color: #e6a563;
-}
-h2 {
-    text-align: center;
 }
 header .container {
     padding: 10px;
@@ -34,7 +33,6 @@ header .container {
 header img {
     width: 250px;
     margin-right: auto;
-
 }
 header ul {
     list-style-type: none;
@@ -52,6 +50,7 @@ header ul {
 nav li {
     margin: 0 1em;
 }
+/* footer */
 footer {
     text-align: center;
     background-color: #D9D9D9;
@@ -59,4 +58,63 @@ footer {
 }
 footer img {
     width: 35px;
+}
+section {
+    padding: 2rem;
+    margin: 0;
+}
+h2 {
+    text-align: center;
+}
+.community-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: auto auto; */
+    gap: 15px;
+    max-width: 100%;
+    justify-items: center;
+    align-items: start;
+    /* align-content: center; */
+}
+.event-block1 {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    background-color: white;
+    filter: drop-shadow(rgb(234, 233, 233) 1rem 1rem 10px);
+}
+.event-block2, .event-block3 {
+    display: grid;
+    max-width: 250px;
+    height: 500px;
+    text-align: center;
+    background-color: white;
+    filter: drop-shadow(rgb(234, 233, 233) 1rem 1rem 10px);
+}
+.event-block2 {
+    grid-column: 1;
+    height: 100%;
+}
+.event-block3 {
+    grid-column: 2;
+    height: 100%;
+}
+/* community images */
+.event1 img{
+    max-width: 450px;
+}
+.event2 img, .event3 img{
+    display: block;
+    max-width: 250px;
+}
+/* community details */
+span {
+    color: #959595;
+    font-size: smaller;
+}
+p {
+    padding: 015px;
+    font-size: 0.95em;
 }
