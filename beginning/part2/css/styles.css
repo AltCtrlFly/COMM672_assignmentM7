@@ -72,12 +72,14 @@ h2 {
     gap: 20px;
     justify-items: center;
     align-content: center;
+    padding: 20px;
 }
 .event-block1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    align-items: center;
+    padding: 0;
+    margin: 0;
     background-color: white;
     filter: drop-shadow(rgb(234, 233, 233) 1rem 1rem 10px);
 }
